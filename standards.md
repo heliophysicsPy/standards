@@ -2,9 +2,9 @@
 
 **Purpose**: In the interest of fostering an open, welcoming, collaborative, and interoperable environment, this document lists a set of standards for the Python in Heliophysics Community. We pledge to hold ourselves to these standards to the best of our ability.
 
-Drafted during the Heliopython Meeting of November 2018
-Agreed on 10-Dec-2018 by <br>
-Name1, Name2, Name 3
+Drafted during the Heliopython Meeting of November 2018 <br>
+Agreed on 10-Dec-2018 by (in alpahbetical order) <br>
+A. Annex (JHU), A. Atterman (Univ. of Michigan), A. Azari (Univ. of Michigan), B. Cecconi (Observartoire de Paris), S. Christe (NASA GSFC), A. DeWolfe (LASP), B. Harter (LASP), J. Ireland (NASA GSFC), M. Liu (SunPy), N. Murphy (CfA), C. Piker (Univ. of Iowa), A. Roberts (NASA GSFC), J. Vangegriff (JHU/APL)
 
 Definitions:
 * Use of the word “**must**” means that it is a requirement.
