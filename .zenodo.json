@@ -1,0 +1,159 @@
+{
+    "language": "eng", 
+    "license": "Apache-2.0", 
+    "title": "Python in Heliophysics Community (PyHC) Standards", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/heliophysicsPy/standards/tree/v1.0", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.2529130", 
+            "relation": "isVersionOf"
+        }
+    ], 
+    "publication_type": "softwaredocumentation", 
+    "version": "v1.0", 
+    "upload_type": "publication", 
+    "keywords": [
+        "standards", 
+        "heliophysics", 
+        "python"
+    ], 
+    "publication_date": "2018-12-31", 
+    "creators": [
+        {
+            "affiliation": "@JHU", 
+            "name": "Annex, A."
+        }, 
+        {
+            "affiliation": "@Univ. of Michigan", 
+            "name": "Alterman, B. L."
+        }, 
+        {
+            "affiliation": "@Univ. of Michigan", 
+            "name": "Azari, A."
+        }, 
+        {
+            "affiliation": "@Rice Univ.", 
+            "name": "Barnes, W."
+        }, 
+        {
+            "affiliation": "@Stanford", 
+            "name": "Bobra, M."
+        }, 
+        {
+            "affiliation": "@Observartoire de Paris", 
+            "name": "Cecconi, B."
+        }, 
+        {
+            "orcid": "0000-0001-6127-795X", 
+            "affiliation": "@NASA-GSFC", 
+            "name": "Christe, Steven"
+        }, 
+        {
+            "affiliation": "@Univ. of Southampton", 
+            "name": "Coxon, J."
+        }, 
+        {
+            "affiliation": "@LASP", 
+            "name": "DeWolfe, A."
+        }, 
+        {
+            "affiliation": "@Aerospace Corporation", 
+            "name": "Halford, A."
+        }, 
+        {
+            "affiliation": "@LASP", 
+            "name": "Harter, B."
+        }, 
+        {
+            "affiliation": "@NASA-GSFC", 
+            "name": "Ireland, J."
+        }, 
+        {
+            "affiliation": "@SWRI", 
+            "name": "Jahn, J."
+        }, 
+        {
+            "affiliation": "@NASA-GSFC", 
+            "name": "Klenzing, J."
+        }, 
+        {
+            "affiliation": "@SunPy", 
+            "name": "Liu, M."
+        }, 
+        {
+            "affiliation": "@NASA-GSFC", 
+            "name": "Mason, J."
+        }, 
+        {
+            "affiliation": "@NASA-JPL", 
+            "name": "McGranaghan, R."
+        }, 
+        {
+            "affiliation": "@CfA", 
+            "name": "Murphy, N."
+        }, 
+        {
+            "affiliation": "@Trinity College Dublin", 
+            "name": "Murray, S."
+        }, 
+        {
+            "affiliation": "@Univ. of New Hampshire", 
+            "name": "Niehof, J."
+        }, 
+        {
+            "affiliation": "@Lomonosov Moscow State Univ.", 
+            "name": "Nguyen, M. D."
+        }, 
+        {
+            "affiliation": "@LASP", 
+            "name": "Panneton, R."
+        }, 
+        {
+            "affiliation": "@NASA-GSFC", 
+            "name": "Pembroke, A."
+        }, 
+        {
+            "affiliation": "@University College London", 
+            "name": "P\u00e9rez-Su\u00e1rez, D."
+        }, 
+        {
+            "affiliation": "@Univ. of Iowa", 
+            "name": "Piker, C."
+        }, 
+        {
+            "affiliation": "@NASA-GSFC", 
+            "name": "Roberts, A."
+        }, 
+        {
+            "affiliation": "@NASA-GSFC", 
+            "name": "Ryan, D."
+        }, 
+        {
+            "affiliation": "@NASA-MSFC", 
+            "name": "Savage, S."
+        }, 
+        {
+            "affiliation": "@NASA-GSFC", 
+            "name": "Smith, J."
+        }, 
+        {
+            "affiliation": "@Imperial College London", 
+            "name": "Stansby, D."
+        }, 
+        {
+            "affiliation": "@JHU", 
+            "name": "Vandegriff, J."
+        }, 
+        {
+            "affiliation": "@George Mason University", 
+            "name": "Weigel, R. S."
+        }
+    ], 
+    "access_right": "open", 
+    "description": "<p>A set of standards for the Python in Heliophysics Community.</p>"
+}
