@@ -50,7 +50,7 @@
             "affiliation": "@Observatoire de Paris", 
             "name": "Cecconi, B.",
             "orcid": "0000-0001-7915-5571"
-        }, 
+        },
         {
             "orcid": "0000-0001-6127-795X", 
             "affiliation": "@NASA-GSFC", 
@@ -97,6 +97,11 @@
         {
             "affiliation": "@NASA-JPL", 
             "name": "McGranaghan, R."
+        },
+        {
+            "orcid": "0000-0003-4217-4642", 
+            "affiliation": "@Aperio Software", 
+            "name": "Mumford, Stuart"
         }, 
         {
             "affiliation": "@Center for Astrophysics | Harvard & Smithsonian", 
