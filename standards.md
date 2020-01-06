@@ -14,7 +14,7 @@ Agreed on 10-Dec-2018 by (in alphabetical order)
 
 **A. Annex** (JHU), **B. L. Alterman** (Univ. of Michigan), **A. Azari** (Univ. of Michigan), **W. Barnes** (Rice Univ.), **M. Bobra** (Stanford), **B. Cecconi** (Observartoire de Paris), **S. Christe** (NASA GSFC), **J. Coxon** (Univ. of Southampton), **A. DeWolfe** (LASP), **A. Halford** (Aerospace Corporation), **B. Harter** (LASP), **J. Ireland** (NASA GSFC), **J. Jahn** (SwRI), **J. Klenzing** (NASA GSFC), **M. Liu** (SunPy), **J. Mason** (NASA GSFC), **R. McGranaghan** (NASA JPL), **N. Murphy** (CfA), **S. Murray** (Trinity College Dublin), **J. Niehof** (Univ. of New Hampshire), **M.D. Nguyen** (Lomonosov Moscow State Univ.), **R. Panneton** (CU/LASP), **A. Pembroke** (NASA GSFC), **D. Pérez-Suárez** (University College London), **C. Piker** (Univ. of Iowa), **A. Roberts** (NASA GSFC), **D. Ryan** (NASA GSFC), **S. Savage** (NASA GSFC), **J. Smith** (NASA GSFC, Catholic Univ.), **D. Stansby** (Imperial College London), **J. Vandegriff** (JHU/APL), **R. S. Weigel** (George Mason University)
 
-Amended on 05-Nov-2019 by (in alphabetical order)
+Amended on 06-Jan-2020 by (in alphabetical order)
 
 **N. Murphy** (CfA), 
 
@@ -40,7 +40,6 @@ Definitions:
 10. **Dependencies**: Projects should import the minimum number of packages necessary. 	Adding new dependencies should be a __considered__ decision.
 11. **Python 3**: All packages must be compatible or work towards being compatible with Python 3. Providing ongoing support for Python 2 is not recommended as the end of life for Python 2 is January 1, 2020 (see [PEP 373](https://www.python.org/dev/peps/pep-0373/)).
 12. **Deprecation Policy** (in accordance with [NEP 29](https://numpy.org/neps/nep-0029-deprecation_policy.html)): Each project should support (1) all minor versions of Python released 42 months prior to the project, and at minimum the two latest minor versions; and (2) all minor versions of NumPy released in the 24 months prior to the project, and at minimum the last three minor versions.  In ``setup.py``, the ``python_requires`` variable should be set to the minimum supported version of Python.  All supported minor versions of Python should be in the test matrix and have binary artifacts built for the release.  Minimum Python and NumPy version support should be adjusted upward only on major and minor releases, and never on a patch release.
-
 13. **Duplication**: Duplication of code and functionality is discouraged. Forking projects into new projects is strongly discouraged.
 14. **Collaboration**: Contributions to packages must be encouraged. Packages must provide contribution guidelines, and clearly and constructively explain when a contribution is not accepted.
 15. **Binaries**: Binary files should be added to the package repository only when necessary in order to keep packages as light as possible. Jupyter notebooks can be binary files and should not be committed to the package repository but can be provided in other repositories.
