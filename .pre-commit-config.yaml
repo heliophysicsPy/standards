@@ -4,39 +4,6 @@ ci:
 
 repos:
 
-- repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.5.0
-  hooks:
-  - id: trailing-whitespace
-  - id: check-case-conflict
-  - id: end-of-file-fixer
-  - id: check-yaml
-  - id: check-merge-conflict
-
-- repo: https://github.com/sirosen/texthooks
-  rev: 0.6.2
-  hooks:
-  - id: fix-smartquotes
-  - id: fix-spaces
-  - id: fix-ligatures
-  - id: forbid-bidi-controls
-
-- repo: https://github.com/pre-commit/pygrep-hooks
-  rev: v1.10.0
-  hooks:
-  - id: text-unicode-replacement-char
-
-- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.11.0
-  hooks:
-  - id: pretty-format-yaml
-    args: [--autofix]
-
-- repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 0.27.0
-  hooks:
-  - id: check-github-workflows
-
 - repo: https://github.com/codespell-project/codespell
   rev: v2.2.6
   hooks:
