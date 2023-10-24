@@ -37,4 +37,3 @@ Definitions:
 13. **Collaboration**: Contributions to packages must be encouraged. Packages must provide contribution guidelines and clearly explain when a contribution is not accepted.
 14. **Binaries**: Binary files should be added to the package repository only when necessary in order to keep packages as light as possible. Jupyter notebooks can be binary files and should not be committed to the package repository but can be provided in other repositories.
 15. **Code of conduct**:  Each project must adopt a code of conduct that is compatible with the [Contributor Covenant](https://www.contributor-covenant.org) and make it publicly available.
-
