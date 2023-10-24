@@ -15,8 +15,8 @@ Agreed on 10-Dec-2018 by (in alphabetical order)
 ---
 
 Definitions:
-* Use of the word “**must**” means that it is a requirement.
-* Use of the word “**should**” means that it is a recommendation.
+* Use of the word "**must**" means that it is a requirement.
+* Use of the word "**should**" means that it is a recommendation.
 * **Packages** - A package is a collection of Python modules which provide related functionality.
 * **Stable Package** - A package whose functionality and user interface is not planned on changing until the next major release.
 
@@ -29,7 +29,7 @@ Definitions:
 5. **License**: Projects must provide a license. Projects should use permissive licenses for open source scientific software (e.g., the BSD 2-clause, BSD 3-clause, or BSD+Patent licenses). Copyleft licenses such as GPL are not recommended and OSI-approved permissive licenses are recommended.
 6. **Version control**: All code must use version control. It is strongly recommended that projects make use of a distributed version control system (e.g., git).
 7. **Coding Style**: Projects must adopt the basic style recommendations of [PEP 8](https://www.python.org/dev/peps/pep-0008/) and static analysis tools should be used to identify deviations from the basic style recommendations (e.g. pylint, flake8, pycodestyle).
-8. **Documentation**: All functions, classes, and modules must have documentation strings (docstrings) provided in a standard [conventions](https://www.python.org/dev/peps/pep-0257/) (e.g. [numpydoc](https://numpydoc.readthedocs.io/en/latest/format.html)). Docstrings must describe the code’s purpose, describe all inputs and outputs, and provide examples. High level documentation must also be provided as guides, tutorials, and developer docs. Documentation must be provided in version control with the code and be made available online in a readable form.
+8. **Documentation**: All functions, classes, and modules must have documentation strings (docstrings) provided in a standard [conventions](https://www.python.org/dev/peps/pep-0257/) (e.g. [numpydoc](https://numpydoc.readthedocs.io/en/latest/format.html)). Docstrings must describe the code's purpose, describe all inputs and outputs, and provide examples. High level documentation must also be provided as guides, tutorials, and developer docs. Documentation must be provided in version control with the code and be made available online in a readable form.
 9. **Testing**: Stable packages must provide unit tests of individual components (e.g. functions, classes) as well as integration tests that test the interaction between components that covers most of the code. Testing coverage should be measured. Automated testing is recommended, in which tests are run before any code is merged. System[link] and acceptance[link] testing are also recommended.
 10. **Dependencies**: Projects should import the minimum number of packages necessary. 	Adding new dependencies should be a __considered__ decision.
 11. **Python 3**: All packages must be compatible or work towards being compatible with Python 3. Providing ongoing support for Python 2 is not recommended as the end of life for Python 2 is January 1, 2020 (see [PEP 373](https://www.python.org/dev/peps/pep-0373/)).
