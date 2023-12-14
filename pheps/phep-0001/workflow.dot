@@ -7,7 +7,7 @@ node [shape=box group=main];
 layout=dot;
 
 author_discussion [
-    label="Author opens discussion / issue" 
+    label="Author gathers community input" 
 ]
 
 author_draft [

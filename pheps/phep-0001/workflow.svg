@@ -11,8 +11,8 @@
 <!-- author_discussion -->
 <g id="node1" class="node">
 <title>author_discussion</title>
-<polygon fill="none" stroke="black" points="207,-1313 19,-1313 19,-1277 207,-1277 207,-1313"/>
-<text text-anchor="middle" x="113" y="-1291.3" font-family="Times,serif" font-size="14.00">Author opens discussion / issue</text>
+<polygon fill="none" stroke="black" points="211,-1313 15,-1313 15,-1277 211,-1277 211,-1313"/>
+<text text-anchor="middle" x="113" y="-1291.3" font-family="Times,serif" font-size="14.00">Author gathers community input</text>
 </g>
 <!-- author_draft -->
 <g id="node2" class="node">
