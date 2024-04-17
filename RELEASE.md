@@ -94,7 +94,7 @@ Follow these steps to update PHEPs on the PyHC website:
 - Create a new feature branch for your changes
 - Clone this [`standards`](https://github.com/heliophysicsPy/heliophysicsPy.github.io) repo where PHEPs are kept
 - Run the `phep_to_yaml.py` script to get a new `pheps.yml` file (which will contain entries for every PHEP)
-  - If a PHEP has a DOI but no corresponding `DOI` yaml field, manually add a `DOI` field with its DOI in the format `10.XXXX/YYYYYYYY` (`phep_to_yaml.py` prints a warning when this is needed)
+  - If a PHEP has a DOI but no corresponding `DOI` yaml field, manually add it in the format `10.XXXX/YYYYYYYY` (`phep_to_yaml.py` prints a warning when this is needed)
 - In the website repo, place your new `pheps.yml` file inside the `_data/` folder (replacing the old one)
 - Open a PR to merge your `pheps.yml` changes
 
