@@ -89,6 +89,14 @@ Public
 Save the draft, preview, and publish when ready
 
 ## Updating website
+Follow these steps to update PHEPs on the PyHC website:
+- Clone the website repo: https://github.com/heliophysicsPy/heliophysicsPy.github.io
+- Create a new feature branch for your changes
+- Clone this [`standards`](https://github.com/heliophysicsPy/heliophysicsPy.github.io) repo where PHEPs are kept
+- Run the `phep_to_yaml.py` script to get a new `pheps.yml` file (which will contain entries for every PHEP)
+  - If a PHEP has a DOI but no corresponding `DOI` yaml field, manually add a `DOI` field with its DOI in the format `10.XXXX/YYYYYYYY` (`phep_to_yaml.py` prints a warning when this is needed)
+- In the website repo, place your new `pheps.yml` file inside the `_data/` folder (replacing the old one)
+- Open a PR to merge your `pheps.yml` changes
 
 ## Related PHEPs
 The process above should be repeated as necessary to update affected PHEPs. For example, if a PHEP is replaced, a new  revision needs to be uploaded, including which PHEP replaces it (and all the relevant Zenodo records, as noted). If a new revision of a PHEP is uploaded, the metadata on the Zenodo record of the previous revision need to be updated.
