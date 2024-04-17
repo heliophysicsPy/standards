@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import email
+import email.policy
 import glob
 import os.path
 import re
@@ -28,7 +29,8 @@ for ph in phep_src:
             warnings.warn(f"{ph} preamble has no closing code fence, skipping.")
             continue
         body = f.readlines()
-    phep = dict(email.message_from_string("".join(headers)))
+    phep = dict(email.message_from_string("".join(headers),
+                                          policy=email.policy.EmailPolicy()))
     required = (
         "PHEP", "Title", "Author", "Discussions-To", "Revision", "Status",
         "Type", "Content-Type", "Created", "Post-History",
