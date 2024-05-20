@@ -29,8 +29,9 @@ for ph in phep_src:
             warnings.warn(f"{ph} preamble has no closing code fence, skipping.")
             continue
         body = f.readlines()
-    phep = dict(email.message_from_string("".join(headers),
-                                          policy=email.policy.EmailPolicy()))
+    m = email.message_from_string("".join(headers),
+                                  policy=email.policy.EmailPolicy())
+    phep = {k: str(v) for k, v in m.items()}
     required = (
         "PHEP", "Title", "Author", "Discussions-To", "Revision", "Status",
         "Type", "Content-Type", "Created", "Post-History",
