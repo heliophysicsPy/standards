@@ -1,0 +1,112 @@
+// dot -Tsvg workflow.dot -o workflow.svg
+digraph g {
+graph [ rankdir="TB" ];
+bgcolor=transparent;
+splines=true;
+node [shape=box group=main];
+layout=dot;
+
+author_discussion [
+    label="Author gathers community input" 
+]
+
+author_draft [
+    label="Author drafts PHEP"
+]
+author_discussion -> author_draft
+
+author_pr [
+    label="Author opens draft PR"
+]
+author_draft -> author_pr
+
+editor_review [
+    label="Editor reviews.\nFormat\ncompliant?"
+    shape=diamond
+]
+author_pr -> editor_review
+
+editor_assigns [
+    label="Editor assigns number"
+]
+editor_review -> editor_assigns [label="Yes"]
+
+author_updates_number [
+    label="Author updates\nPR link, number, date created, posted\nMarks PR ready for review"
+]
+editor_assigns -> author_updates_number
+
+discussion [
+    label="Discussion, revision,\nreference implementation"
+]
+author_updates_number -> discussion
+
+vote1_announced [
+    label="First vote announced"
+]
+discussion -> vote1_announced
+
+further_discussion [
+    label="Futher discussion / edits"
+]
+vote1_announced -> further_discussion
+
+vote1 [
+    label="First\nvote"
+    shape=diamond
+]
+further_discussion -> vote1
+
+result1 [
+    label="Result announced"
+]
+edited -> vote1 [taillabel="Y" constraint=False]
+vote1 -> result1 [taillabel="Consensus"]
+
+vote2_announced [
+    label="Second vote announced"
+]
+result1 -> vote2_announced
+
+edited [
+    label="Edited since\nfirst vote?"
+    shape=diamond
+]
+vote2_announced -> edited
+
+vote2 [
+    label="Second\nvote"
+    shape=diamond
+]
+edited -> vote2 [taillabel="N"]
+
+final [
+    label="Mark Final, update Resolution, merge"
+]
+vote2 -> final [taillabel="Consensus"]
+
+return_for_revision [
+    label="Editor returns to\nauthor for revision"
+    group=right
+]
+editor_review -> return_for_revision [label="No"]
+return_for_revision -> editor_review [constraint=False headport=e]
+
+author_continues [
+    label="Author\ncontinues\nto edit?"
+    shape=diamond
+    group=right
+]
+vote1 -> author_continues [label="No consensus" constraint=False]
+author_continues -> discussion [taillabel="Y" constraint=False tailport=n headport=e]
+vote2 -> author_continues [taillabel="No consensus" constraint=False headport=s tailport=e]
+
+rejected [
+    label="Rejected"
+    group=right
+]
+author_continues -> rejected [taillabel="N" constraint=False]
+
+further_discussion -> author_continues [style="invis"]
+further_discussion -> rejected [style="invis"]
+}
