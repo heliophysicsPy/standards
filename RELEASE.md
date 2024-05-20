@@ -20,7 +20,7 @@ Note: Zenodo assigns [two DOIs](https://zenodo.org/help/versioning) on first upl
   * Update the contents of the PHEP as documented in PHEP 1 (Status, current date in Post-History, Revision with date accepted/rejected, updated copyright date, and updated DOI with the DOI reserved above).
   * Add the Resolution header to the PHEP with a link to the minutes of the two votes on the PHEP.
   * Commit and push to the PR.
-  * PHEP editors or PyHC leadership merge final commit. History should be maintained, so merge or rebase is fine, squash is not. (Which is preferred can be selected before merging this PR).
+  * PHEP editors or PyHC leadership merge final commit. History should be maintained, so merge or rebase is fine, squash is not. We have been using merge.
 
 ## Creating files and release
   * Create a PDF of the PHEP from the markdown of the latest pushed commit; use pandoc: `pandoc -f commonmark phep-0001.md -V geometry:letterpaper,margin=1in -o phep-0001.pdf`. (This is in the `pandoc` package in Ubuntu and uses `rsvg-convert` from package `librsvg2-bin`.) Pandoc converts via LaTeX, which means if code blocks overflow the line length they will not be wrapped (a problem with a very long `Post-History` header); use RFC-2822 header folding as necessary. If the Markdown source references other files with relative reference, `pandoc` needs to be run in the same directory. Unfortunately pandoc's LaTeX renderer does not handle internal links well, but other renderers have other problems.
@@ -31,19 +31,19 @@ Note: Zenodo assigns [two DOIs](https://zenodo.org/help/versioning) on first upl
 Resume the draft record on Zenodo
 
 ### Files
-  * Upload the rendered PDF.
+  * Upload the rendered PDF, the Markdown source, and any other sources (e.g. images).
 
 ### Basic Information
   * Resource Type "Publication / Standard".
   * Title: PHEP number plus its title, e.g. "PHEP 1: PHEP Purpose and Guidelines".
   * Publication Date: Date when the release was tagged on GitHub.
   * Creators: The author of the PHEP, ideally including their ORCID.
-  * Description: Leave blank?
+  * Description: Leave blank.
   * Licenses: CC0 (there is no "public domain" option explicitly).
 
 ### Recommended Information
   * Contributors: the PHEP editor(s) who managed the process for this PHEP; consider including other major contributors to the discussion.
-  * Keywords and subjects: None?
+  * Keywords and subjects: None.
   * Languages: English.
   * Dates
     * Created: same as Created in the PHEP header, i.e. the date the PHEP number was assigned. This will always be the created date of revision 1.
@@ -51,22 +51,22 @@ Resume the draft record on Zenodo
     * Withdrawn: date of a PHEP's withdrawal, a final vote where it was Rejected, or the date of the vote that accepted its replacement.
     * Updated: only for revised PHEPs, date that a revision was merged to `main`.
   * Version: Revision number.
-  * Publisher: Leave as Zenodo?
+  * Publisher: Leave as Zenodo.
 
 ### Funding
-Leave blank?
+Leave blank.
 
 ### Alternate Identifiers
-Leave blank?
+Leave blank.
 
 ### Related Works
-  * Is derived from (or Is variant form of?), Identifier is link to GitHub release e.g. https://github.com/heliophysicsPy/standards/releases/tag/phep-2-12, Scheme URL.
-  * Is derived from (or Is variant form of?), Identifier is link to the Markdown source in the tagged commit, e.g. https://github.com/heliophysicsPy/standards/blob/a4b3f558b9ffa712324e63ff6a83325cc69e367f/pheps/phep-0001.md, Scheme URL.
+  * Is derived from: Identifier is link to GitHub release e.g. https://github.com/heliophysicsPy/standards/releases/tag/phep-2-12, Scheme URL.
+  * Is derived from: Identifier is link to the Markdown source in the tagged commit, e.g. https://github.com/heliophysicsPy/standards/blob/a4b3f558b9ffa712324e63ff6a83325cc69e367f/pheps/phep-0001.md, Scheme URL.
   * For revisions of a single PHEP: Use "Is new version of", scheme DOI, and the Zenodo DOI of the previous revision. On the previous revision, add a new related work of "Is previous version of" and put in the new Zenodo DOI (this field should be updatable after the DOI is minted). Type is Publication/Standard for both.
   * Related works for PHEPs that replace: Use "Obsoletes", scheme DOI, and the Zenodo DOI of any PHEPs that are replaced; similarly update their records to "Is obsoleted by" and the new PHEP's Zenodo DOI. Type is again Publication/Standard.
 
 ### References
-Leave blank?
+Leave blank.
 
 ### Software
   * Repository URL: https://github.com/heliophysicsPy/standards/ .
@@ -74,13 +74,13 @@ Leave blank?
   * Development Status: Active.
 
 ### Publishing Information
-Leave blank?
+Leave blank.
 
 ### Conference
-Leave blank? Or put in information on the vote?
+Leave blank.
 
 ### Domain Specific Fields
-Leave blank?
+Leave blank.
 
 ### Visibility
 Public
