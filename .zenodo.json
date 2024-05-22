@@ -1,167 +1,167 @@
 {
-    "language": "eng", 
-    "license": "Apache-2.0", 
-    "title": "Python in Heliophysics Community (PyHC) Standards", 
+    "language": "eng",
+    "license": "Apache-2.0",
+    "title": "Python in Heliophysics Community (PyHC) Standards",
     "related_identifiers": [
         {
-            "scheme": "url", 
-            "identifier": "https://github.com/heliophysicsPy/standards/tree/v1.0", 
+            "scheme": "url",
+            "identifier": "https://github.com/heliophysicsPy/standards/tree/v1.0",
             "relation": "isSupplementTo"
-        }, 
+        },
         {
-            "scheme": "doi", 
-            "identifier": "10.5281/zenodo.2529130", 
+            "scheme": "doi",
+            "identifier": "10.5281/zenodo.2529130",
             "relation": "isVersionOf"
         }
-    ], 
-    "publication_type": "softwaredocumentation", 
-    "version": "v1.0", 
-    "upload_type": "publication", 
+    ],
+    "publication_type": "softwaredocumentation",
+    "version": "v1.0",
+    "upload_type": "publication",
     "keywords": [
-        "standards", 
-        "heliophysics", 
+        "standards",
+        "heliophysics",
         "python"
-    ], 
-    "publication_date": "2018-12-31", 
+    ],
+    "publication_date": "2018-12-31",
     "creators": [
         {
-            "affiliation": "@JHU", 
+            "affiliation": "@JHU",
             "name": "Annex, A."
-        }, 
+        },
         {
-            "affiliation": "@Univ. of Michigan", 
+            "affiliation": "@Univ. of Michigan",
             "name": "Alterman, B. L.",
             "orcid": "0000-0001-6673-3432",
-        }, 
+        },
         {
-            "affiliation": "@Univ. of Michigan", 
+            "affiliation": "@Univ. of Michigan",
             "name": "Azari, A. R.",
             "orcid": "0000-0002-8665-5459"
-        }, 
+        },
         {
-            "affiliation": "@Rice Univ.", 
+            "affiliation": "@Rice Univ.",
             "name": "Barnes, W."
-        }, 
+        },
         {
-            "affiliation": "@Stanford", 
+            "affiliation": "@Stanford",
             "name": "Bobra, M."
-        }, 
+        },
         {
-            "affiliation": "@Observatoire de Paris", 
+            "affiliation": "@Observatoire de Paris",
             "name": "Cecconi, B.",
             "orcid": "0000-0001-7915-5571"
         },
         {
-            "orcid": "0000-0001-6127-795X", 
-            "affiliation": "@NASA-GSFC", 
+            "orcid": "0000-0001-6127-795X",
+            "affiliation": "@NASA-GSFC",
             "name": "Christe, Steven"
-        }, 
+        },
         {
-            "affiliation": "@Univ. of Southampton", 
+            "affiliation": "@Univ. of Southampton",
             "name": "Coxon, J."
-        }, 
+        },
         {
-            "affiliation": "@LASP", 
+            "affiliation": "@LASP",
             "name": "DeWolfe, A."
-        }, 
+        },
         {
-            "affiliation": "@Aerospace Corporation", 
+            "affiliation": "@Aerospace Corporation",
             "name": "Halford, A."
-        }, 
+        },
         {
-            "affiliation": "@LASP", 
+            "affiliation": "@LASP",
             "name": "Harter, B."
-        }, 
+        },
         {
-            "affiliation": "@NASA-GSFC", 
+            "affiliation": "@NASA-GSFC",
             "name": "Ireland, J."
-        }, 
+        },
         {
-            "affiliation": "@SWRI", 
+            "affiliation": "@SWRI",
             "name": "Jahn, J."
-        }, 
+        },
         {
-            "affiliation": "@NASA-GSFC", 
+            "affiliation": "@NASA-GSFC",
             "name": "Klenzing, J."
             "orcid": "0000-0001-8321-6074"
-        }, 
+        },
         {
-            "affiliation": "@SunPy", 
+            "affiliation": "@SunPy",
             "name": "Liu, M."
-        }, 
+        },
         {
-            "affiliation": "@NASA-GSFC", 
+            "affiliation": "@NASA-GSFC",
             "name": "Mason, J."
             "orcid": "0000-0002-3783-5509"
-        }, 
+        },
         {
-            "affiliation": "@NASA-JPL", 
+            "affiliation": "@NASA-JPL",
             "name": "McGranaghan, R."
         },
         {
-            "orcid": "0000-0003-4217-4642", 
-            "affiliation": "@Aperio Software", 
+            "orcid": "0000-0003-4217-4642",
+            "affiliation": "@Aperio Software",
             "name": "Mumford, Stuart"
-        }, 
+        },
         {
-            "affiliation": "@Center for Astrophysics | Harvard & Smithsonian", 
+            "affiliation": "@Center for Astrophysics | Harvard & Smithsonian",
             "name": "Murphy, N. A.",
             "orcid": "0000-0001-6628-8033",
-        }, 
+        },
         {
-            "affiliation": "@Trinity College Dublin", 
+            "affiliation": "@Trinity College Dublin",
             "name": "Murray, S."
-        }, 
+        },
         {
-            "affiliation": "@Univ. of New Hampshire", 
+            "affiliation": "@Univ. of New Hampshire",
             "name": "Niehof, J."
-        }, 
+        },
         {
-            "affiliation": "@Lomonosov Moscow State Univ.", 
+            "affiliation": "@Lomonosov Moscow State Univ.",
             "name": "Nguyen, M. D."
-        }, 
+        },
         {
-            "affiliation": "@LASP", 
+            "affiliation": "@LASP",
             "name": "Panneton, R."
-        }, 
+        },
         {
-            "affiliation": "@NASA-GSFC", 
+            "affiliation": "@NASA-GSFC",
             "name": "Pembroke, A."
-        }, 
+        },
         {
-            "affiliation": "@University College London", 
+            "affiliation": "@University College London",
             "name": "P\u00e9rez-Su\u00e1rez, D."
-        }, 
+        },
         {
-            "affiliation": "@Univ. of Iowa", 
+            "affiliation": "@Univ. of Iowa",
             "name": "Piker, C."
-        }, 
+        },
         {
-            "affiliation": "@NASA-GSFC", 
+            "affiliation": "@NASA-GSFC",
             "name": "Roberts, A."
-        }, 
+        },
         {
-            "affiliation": "@NASA-GSFC", 
+            "affiliation": "@NASA-GSFC",
             "name": "Ryan, D."
-        }, 
+        },
         {
-            "affiliation": "@NASA-MSFC", 
+            "affiliation": "@NASA-MSFC",
             "name": "Savage, S."
-        }, 
+        },
         {
-            "affiliation": "@NASA-GSFC", 
+            "affiliation": "@NASA-GSFC",
             "name": "Smith, J."
-        }, 
+        },
         {
-            "affiliation": "@Imperial College London", 
+            "affiliation": "@Imperial College London",
             "name": "Stansby, D."
-        }, 
+        },
         {
-            "affiliation": "@JHU", 
+            "affiliation": "@JHU",
             "name": "Vandegriff, J."
-        }, 
+        },
         {
-            "affiliation": "@George Mason University", 
+            "affiliation": "@George Mason University",
             "name": "Weigel, R. S.",
             "orcid": "0000-0002-9521-5228"
         },
@@ -170,7 +170,7 @@
             "name": "Yu, S.",
             "orcid": "0000-0003-2872-2614"
         }
-    ], 
-    "access_right": "open", 
+    ],
+    "access_right": "open",
     "description": "<p>A set of standards for the Python in Heliophysics Community.</p>"
 }
