@@ -5,16 +5,17 @@ ci:
 repos:
 
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.5.0
+  rev: v4.6.0
   hooks:
   - id: trailing-whitespace
   - id: check-case-conflict
   - id: end-of-file-fixer
+    exclude: .*\.dot|.*\.svg
   - id: check-yaml
   - id: check-merge-conflict
 
 - repo: https://github.com/sirosen/texthooks
-  rev: 0.6.2
+  rev: 0.6.6
   hooks:
   - id: fix-smartquotes
   - id: fix-spaces
@@ -27,20 +28,21 @@ repos:
   - id: text-unicode-replacement-char
 
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.11.0
+  rev: v2.13.0
   hooks:
   - id: pretty-format-yaml
     args: [--autofix]
 
 - repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 0.27.0
+  rev: 0.29.0
   hooks:
   - id: check-github-workflows
 
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.2.6
+  rev: v2.3.0
   hooks:
   - id: codespell
     args: [--write-changes]
+    exclude: .*\.dot|.*\.svg
     additional_dependencies:
     - tomli
