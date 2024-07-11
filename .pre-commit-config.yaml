@@ -11,6 +11,7 @@ repos:
     exclude: pheps/phep-0001/workflow.dot
   - id: check-case-conflict
   - id: end-of-file-fixer
+    exclude: pheps/.*/.*\.dot
   - id: check-yaml
   - id: check-merge-conflict
 
