@@ -2,7 +2,7 @@ ci:
   autofix_prs: false
   autoupdate_schedule: quarterly
 
-exclude: '.*\.dot|.*\.svg'
+exclude: .*\.dot|.*\.svg
 
 repos:
 
