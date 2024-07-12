@@ -2,16 +2,16 @@ ci:
   autofix_prs: false
   autoupdate_schedule: quarterly
 
+exclude: '.*\.dot|.*\.svg'
+
 repos:
 
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.6.0
   hooks:
   - id: trailing-whitespace
-    exclude: pheps/phep-0001/workflow.dot
   - id: check-case-conflict
   - id: end-of-file-fixer
-    exclude: pheps/.*/.*\.dot
   - id: check-yaml
   - id: check-merge-conflict
 
@@ -44,6 +44,5 @@ repos:
   hooks:
   - id: codespell
     args: [--write-changes]
-    exclude: .*\.dot|.*\.svg
     additional_dependencies:
     - tomli
