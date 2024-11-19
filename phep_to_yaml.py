@@ -10,8 +10,8 @@ import warnings
 import yaml
 
 
-phep_src = glob.glob(os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), 'pheps', 'phep-*.md'))
+phep_src = sorted(glob.glob(os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), 'pheps', 'phep-*.md')))
 pheps = []  # fully parsed
 for ph in phep_src:
     if not re.match(r"^phep-\d+\.md$", os.path.basename(ph)):
@@ -46,8 +46,9 @@ for ph in phep_src:
         warnings.warn(
             f"{ph} has unexpected headers {', '.join(bad)}, skipping.")
         continue
-    for k in ('PHEP', 'Revision'):
-        phep[k] = int(phep[k])
+    for k in ('PHEP', 'Requires', 'Revision'):
+        if k in phep:
+            phep[k] = int(phep[k])
     phep["Filename"] = os.path.basename(ph)
     idx = next((i for i, l in enumerate(body)
                 if l.startswith("# Copyright")), None)
