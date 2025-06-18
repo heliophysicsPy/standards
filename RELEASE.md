@@ -11,8 +11,10 @@ Unless otherwise noted, these steps can be carried out by the PHEP author, PHEP 
 ## Reserve a DOI on Zenodo
   * Click the "+" sign on Zenodo or go to the [new upload page](https://zenodo.org/uploads/new).
   * At the top of the page, click the "Select a community" button. Search for "heliophysics" and find the "Python in Heliophysics Community" (with our nifty logo); click "Select".
-  * Under "Basic information", "Do you already have a DOI for this upload?", click "No". Click the "Get a DOI now!" button that appears after clicking No.
+  * Under "Basic information", "Do you already have a DOI for this upload?", click "No".
+  * Click the "Get a DOI now!" button that appears after clicking No.
   * Click the "Save draft" button on the right towards the top, we'll come back to this.
+  * You will have a screen with a bunch of red bars and "Record saved with validation feedback" on the top. This is okay; the record is not complete.
 
 Note: Zenodo assigns [two DOIs](https://zenodo.org/help/versioning) on first upload, what we want to have on our citations is the version-specific one. When you reserve a DOI, the version-specific one is shown, but this can be verified by saving the draft record and previewing it. It looks like, in order to keep them connected, future revisions of a PHEP should not be uploaded as new records, but as updated versions of files on the existing record. This process is not entirely clear without going through it, and this document should be updated as we figure it out.
 
@@ -23,7 +25,11 @@ Note: Zenodo assigns [two DOIs](https://zenodo.org/help/versioning) on first upl
   * PHEP editors or PyHC leadership merge final commit. History should be maintained, so merge or rebase is fine, squash is not. We have been using merge.
 
 ## Creating files and release
-  * Create a PDF of the PHEP from the markdown of the latest pushed commit; use pandoc: `pandoc -f commonmark phep-0001.md -V geometry:letterpaper,margin=1in -o phep-0001.pdf`. (This is in the `pandoc` package in Ubuntu and uses `rsvg-convert` from package `librsvg2-bin`.) Pandoc converts via LaTeX, which means if code blocks overflow the line length they will not be wrapped (a problem with a very long `Post-History` header); use RFC-2822 header folding as necessary. If the Markdown source references other files with relative reference, `pandoc` needs to be run in the same directory. Unfortunately pandoc's LaTeX renderer does not handle internal links well, but other renderers have other problems.
+  * Create a PDF of the PHEP from the markdown of the latest pushed commit; use pandoc: `pandoc -f commonmark phep-0001.md -V geometry:letterpaper,margin=1in -o phep-0001.pdf`.
+    * This is in the `pandoc` package in Ubuntu and uses `rsvg-convert` from package `librsvg2-bin`.
+    * On Mac, use `brew install librsvg`.
+    * Pandoc converts via LaTeX, which means if code blocks overflow the line length they will not be wrapped (a problem with a very long `Post-History` header); use RFC-2822 [header folding](https://datatracker.ietf.org/doc/html/rfc2822#section-2.2.3) as necessary.
+    * If the Markdown source references other files with relative reference, `pandoc` needs to be run in the same directory. Unfortunately pandoc's LaTeX renderer does not handle internal links well, but other renderers have other problems.
   * PHEP editors or PyHC leadership [create a release](https://github.com/heliophysicsPy/standards/releases/new) on GitHub. The release tag is the phep number and revision number, e.g. phep-2-1 for revision 1 of PHEP 2. (Potentially this can be zero-padded). The rendered PDF is the release file.
 
 ## Sending to Zenodo
@@ -37,9 +43,9 @@ Resume the draft record on Zenodo
   * Resource Type "Publication / Standard".
   * Title: PHEP number plus its title, e.g. "PHEP 1: PHEP Purpose and Guidelines".
   * Publication Date: Date when the release was tagged on GitHub.
-  * Creators: The author of the PHEP, ideally including their ORCID.
+  * Creators: The author of the PHEP, ideally including their ORCID. Leave the "role" empty.
   * Description: Leave blank.
-  * Licenses: CC0 (there is no "public domain" option explicitly).
+  * Licenses: Creative Commons Zero 1.0 (CC0), as there is no "public domain" option explicitly.
 
 ### Recommended Information
   * Contributors: the PHEP editor(s) who managed the process for this PHEP; consider including other major contributors to the discussion.
