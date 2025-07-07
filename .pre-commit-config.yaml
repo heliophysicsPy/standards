@@ -29,13 +29,13 @@ repos:
   - id: text-unicode-replacement-char
 
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.14.0
+  rev: v2.15.0
   hooks:
   - id: pretty-format-yaml
     args: [--autofix]
 
 - repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 0.32.1
+  rev: 0.33.2
   hooks:
   - id: check-github-workflows
 
