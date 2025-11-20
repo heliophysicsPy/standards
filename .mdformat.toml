@@ -1,0 +1,8 @@
+# use numbered lists
+number = true
+
+exclude = [
+    "pheps/phep-0001.md",
+    "pheps/phep-0002.md",
+    "standards.md",
+]
