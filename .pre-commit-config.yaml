@@ -7,7 +7,7 @@ exclude: .*\.dot|.*\.svg
 repos:
 
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v5.0.0
+  rev: v6.0.0
   hooks:
   - id: trailing-whitespace
   - id: check-case-conflict
@@ -16,7 +16,7 @@ repos:
   - id: check-merge-conflict
 
 - repo: https://github.com/sirosen/texthooks
-  rev: 0.6.8
+  rev: 0.7.1
   hooks:
   - id: fix-smartquotes
   - id: fix-spaces
@@ -35,7 +35,7 @@ repos:
     args: [--autofix]
 
 - repo: https://github.com/python-jsonschema/check-jsonschema
-  rev: 0.33.2
+  rev: 0.36.0
   hooks:
   - id: check-github-workflows
 
