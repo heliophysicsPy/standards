@@ -36,7 +36,7 @@ Definitions:
     3. Docstrings **must** describe the code's purpose, describe all inputs and outputs, and provide examples.
     4. Code not in the public API **should** have docstrings sufficient for maintenance by contributors, including contributors external to the project.
     5. High level documentation **must** also be provided as guides, tutorials, and developer docs.
-    6. Documentation **must** be provided in version control with the code and be built from the repository into an online format that is publicly readable and linkable; this should almost always be HTML. It is recommended that documentation be built as part of continuous integration (CI).
+    6. Documentation **must** be provided in version control with the code in a human-readable source form such as Markdown. It must be built from the repository into an online format that is publicly readable and linkable. This output **should** almost include HTML. It is recommended that documentation be built as part of continuous integration (CI).
     7. Projects **must** describe their documentation conventions and how to contribute to documentation.
 
 9. **Testing**: Stable packages must provide unit tests of individual components (e.g. functions, classes) as well as integration tests that test the interaction between components that covers most of the code. Testing coverage should be measured. Automated testing is recommended, in which tests are run before any code is merged. System[link] and acceptance[link] testing are also recommended.
